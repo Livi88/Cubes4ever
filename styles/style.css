@@ -1,0 +1,29 @@
+.lathatatlan {
+    display: none;
+}
+
+
+/*.kave6{width: 60%; margin: 0 auto; padding: 10px 50px 50px 50px; text-align:center;}*/
+
+.topnav {
+    background: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav button {
+    width: 13%;
+    margin: 1px;
+    float: left;
+    ddisplay: block;
+    color: white;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    /*border-radius: 50%;*/
+}
