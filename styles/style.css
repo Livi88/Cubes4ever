@@ -1,0 +1,61 @@
+TBody{
+
+    border: solid 1px red;
+
+}
+li{
+    text-align: center;
+    font-size: 16pt;
+    background-color: transparent; 
+    color: black;   
+    padding: 5px;
+    top: 5%;
+    width: 18%;
+    float: left;
+    list-style:none;
+    font-family: 'Roboto';
+}
+li:hover{
+
+    transition-duration: 0.3s;    
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+a{
+
+    text-decoration: none;
+    color: black;
+}
+.cmn-t-underline {
+  position: relative;
+  color: black;
+}
+.cmn-t-underline:after {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  content: "";
+  transition: all 0.2s;
+}
+.cmn-t-underline:hover {
+  color: black;
+}
+.cmn-t-underline:hover:after {
+  width: 100%;
+  left: 0px;
+}
+
+#kereso{
+    border: solid 1px red;
+    display: none;
+}
+#lista{
+    border: solid 1px red;
+    display: none;
+}
