@@ -171,7 +171,12 @@ function CsokkNovValtasErosseg() {
 function Megjelenes() {
 
     document.getElementById("elsoGomb").className = "";
+    document.getElementById("idejonATablazat").className = "";
     //document.getElementById("masodikGomb").className = "lathatatlan";
     Tablazat();
+}
 
+function ListaMegjelenites(){
+    document.getElementById("elsoGomb").className = "lathatatlan";
+    document.getElementById("idejonATablazat").className = "lathatatlan";
 }
