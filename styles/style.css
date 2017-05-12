@@ -1,29 +1,63 @@
 .lathatatlan {
     display: none;
 }
+/* Style the links inside the navigation bar */
+#elsoGomb{
+    display: block;
 
+}
+li{
+    text-align: center;
+    font-size: 16pt;
+    background-color: transparent; 
+    color: black;   
+    padding: 5px;
+    top: 5%;
+    width: 18%;
+    float: left;
+    list-style:none;
+    font-family: 'Roboto';
+}
+li:hover{
 
-/*.kave6{width: 60%; margin: 0 auto; padding: 10px 50px 50px 50px; text-align:center;}*/
-
-.topnav {
-    background: rgba(0, 0, 0, 0.8);
-    overflow: hidden;
+    transition-duration: 0.3s;    
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
-
-/* Style the links inside the navigation bar */
-
-.topnav button {
-    width: 13%;
-    margin: 1px;
-    float: left;
-    ddisplay: block;
-    color: white;
-    border: none;
-    background-color: transparent;
-    text-align: center;
-    padding: 10px 10px;
+a{
     text-decoration: none;
-    font-size: 17px;
-    /*border-radius: 50%;*/
+    color: black;
+}
+.cmn-t-underline {
+  position: relative;
+  color: black;
+}
+.cmn-t-underline:after {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  content: "";
+  transition: all 0.2s;
+}
+.cmn-t-underline:hover {
+  color: black;
+}
+.cmn-t-underline:hover:after {
+  width: 100%;
+  left: 0px;
+}
+
+#kereso{
+    border: solid 1px red;
+    display: none;
+}
+#lista{
+    border: solid 1px red;
+    display: none;
 }
