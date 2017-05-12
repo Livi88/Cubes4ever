@@ -4,17 +4,16 @@
 /* Style the links inside the navigation bar */
 #elsoGomb{
     display: block;
-
 }
 li{
     text-align: center;
     font-size: 16pt;
     background-color: transparent; 
     color: black;   
-    padding: 5px;
+    padding: 15px;
     top: 5%;
     width: 18%;
-    float: left;
+
     list-style:none;
     font-family: 'Roboto';
 }
@@ -25,7 +24,6 @@ li:hover{
     transition-duration: 0.4s;
     cursor: pointer;
 }
-
 a{
     text-decoration: none;
     color: black;
