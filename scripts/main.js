@@ -180,3 +180,28 @@ function ListaMegjelenites(){
     document.getElementById("elsoGomb").className = "lathatatlan";
     document.getElementById("idejonATablazat").className = "lathatatlan";
 }
+
+
+/////////////////keresés filterrel
+var searchBar = document.getElementById('searchBar');
+var filterName = document.getElementById('filterOptions');
+
+function search() {
+    var searchValue = searchBar.value;
+    var filterValue = filterName.value;
+    var searchResult = document.getElementById('idejonATablazat');
+
+    var filteredSearchArray = cofeeDatabase.responseJSON.filter(function (item, index, arr){
+        if (item[filterValue].toLowerCase().indexOf(searchValue.toLowerCase()) != -1 ){
+            return true;
+        } else {
+            return false;
+        }
+    });
+    searchResult.innerHTML = '';
+    if (filteredSearchArray.length == 0){
+        searchResult.innerHTML = 'Nem találtam ilyet';
+    }
+    Megjelenes();
+    TBodyFeltoltoFg(document.getElementById('kukacka'), filteredSearchArray);
+}
