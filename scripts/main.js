@@ -199,10 +199,6 @@ function search() {
             return false;
         }
     });
-    searchResult.innerHTML = '';
-    if (filteredSearchArray.length == 0){
-        searchResult.innerHTML = 'Nem találtam ilyet';
-    }
     Megjelenes();
     TBodyFeltoltoFg(document.getElementById('kukacka'), filteredSearchArray);
 }
