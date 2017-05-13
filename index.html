@@ -12,6 +12,13 @@
     <div id="navigaloGombok">
                 <li class="cmn-t-underline" ><a onclick="Megjelenes();">Kávéfajták</a></li>
                 <li class="cmn-t-underline" ><a onclick="ListaMegjelenites();">Lista</a></li> 
+                
+                <input type="text" placeholder="Keresés..." id="searchBar">
+                <select>
+                    <option value="neve">Kávé fajtája alapján</option>
+                    <option value="szarmazasiorszag">Ország alapján</option>
+                </select>
+                <button type="button" id="searchBtn" onclick="search()">Keress</button>
     </div>
     <p />
     <div id="elsoGomb">
