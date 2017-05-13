@@ -174,6 +174,7 @@ function Megjelenes() {
     document.getElementById("idejonATablazat").className = "";
     //document.getElementById("masodikGomb").className = "lathatatlan";
     Tablazat();
+    TBodyFeltoltoFg(document.getElementById('kukacka'), cofeeDatabase.responseJSON);
 }
 
 function ListaMegjelenites(){
