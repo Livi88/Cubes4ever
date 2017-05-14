@@ -48,9 +48,9 @@ function TBodyFeltoltoFg(table, megjelenitendoKavekTombje) {
     tableBody.innerHTML = '';
     for (var i = 0; i < megjelenitendoKavekTombje.length; i++) {
         var tr = document.createElement('TR');
-        console.warn(megjelenitendoKavekTombje[i].keszleten);
+        //console.warn(megjelenitendoKavekTombje[i].keszleten);
         tr.setAttribute('onclick', 'showInDiv()');
-        tr.setAttribute('data-show', megjelenitendoKavekTombje[i].keszleten);
+        tr.setAttribute('data-show', JSON.stringify(megjelenitendoKavekTombje[i]));
         for (var k in megjelenitendoKavekTombje[i]) {
             if (k == "keszleten") {} else {
                 var td = document.createElement('TD')
@@ -64,7 +64,17 @@ function TBodyFeltoltoFg(table, megjelenitendoKavekTombje) {
 }
 
 function showInDiv() {
-
+    var displayDiv = document.getElementById('displayDiv');
+    var sender = event.target.parentNode;
+    var senderData = sender.getAttribute('data-show');
+    console.log(sender);
+    /*var displayDiv = document.createElement('div');
+    displayDiv.setAttribute('id', 'displayDiv');
+    displayDiv.setAttribute('class', 'displayDiv');
+    //'<table><thead><tr><th>Kávé fajta</th><th>Származási ország</th><th>Erősség</th><th>Kávé ára</th><th>Készleten</th></thead><tbody>'+ sender +/* '<td>'+senderData+'</td>'</tbody></table>';
+    document.body.appendChild(displayDiv);*/
+    displayDiv.innerHTML = '';
+    displayDiv.innerHTML = senderData;
 }
 
 function AltalanosRendezoFx(miAlapjanKellRendezni, rendezesIranya) {
