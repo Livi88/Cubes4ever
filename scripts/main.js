@@ -48,6 +48,9 @@ function TBodyFeltoltoFg(table, megjelenitendoKavekTombje) {
     tableBody.innerHTML = '';
     for (var i = 0; i < megjelenitendoKavekTombje.length; i++) {
         var tr = document.createElement('TR');
+        console.warn(megjelenitendoKavekTombje[i].keszleten);
+        tr.setAttribute('onclick', 'showInDiv()');
+        tr.setAttribute('data-show', megjelenitendoKavekTombje[i].keszleten);
         for (var k in megjelenitendoKavekTombje[i]) {
             if (k == "keszleten") {} else {
                 var td = document.createElement('TD')
@@ -58,6 +61,10 @@ function TBodyFeltoltoFg(table, megjelenitendoKavekTombje) {
         }
         tableBody.appendChild(tr);
     }
+}
+
+function showInDiv() {
+
 }
 
 function AltalanosRendezoFx(miAlapjanKellRendezni, rendezesIranya) {
